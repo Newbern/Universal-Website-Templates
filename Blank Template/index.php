@@ -1,4 +1,18 @@
 <?php 
+// Delete This in Production
+$request = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
+
+// If the requested file exists (CSS, JS, images), serve it normally
+if ($request && file_exists($request)) {
+    return false;
+}
+
+// Default page if visiting "/"
+$_GET['page'] = $request ?: 'home';
+
+
+
+
 
 // Allowed Pages
 $allowedPages = ['home', 'about', 'contact', 'facebook', 'services'];

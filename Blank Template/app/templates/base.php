@@ -31,7 +31,7 @@
            <a href="/home" onclick="showPage('home')">Home</a>
            <a href="/about" onclick="showPage('about')">About</a>
            <a href="/contact" onclick="showPage('contact')">Contact</a>
-           <a href="/service" onclick="showPage('service')">Services</a>
+           <a href="/services" onclick="showPage('services')">Services</a>
            <a href="/facebook" onclick="showPage('facebook')">??FaceBook??</a>
         </aside>
 
