@@ -15,7 +15,7 @@ $_GET['page'] = $request ?: 'home';
 
 
 // Allowed Pages
-$allowedPages = ['home', 'about', 'contact', 'facebook', 'services'];
+$allowedPages = ['home', 'about', 'services', 'contact', 'facebook'];
 
 // Getting current page
 $page = $_GET['page'] ?? '';

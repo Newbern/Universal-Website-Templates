@@ -9,6 +9,12 @@
     <!-- Page Specific CSS -->
     <link rel='stylesheet' href='app/styles/base.css'>
     <link rel='stylesheet' href='<?php echo $CSS; ?>'>
+
+    <!-- Googel Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    
 </head>
     <body>
         <!-- Header Section -->
@@ -28,11 +34,11 @@
 
         <!-- Sidebar -->
         <aside class="sidebar">
-           <a href="/home" onclick="showPage('home')">Home</a>
-           <a href="/about" onclick="showPage('about')">About</a>
-           <a href="/contact" onclick="showPage('contact')">Contact</a>
-           <a href="/services" onclick="showPage('services')">Services</a>
-           <a href="/facebook" onclick="showPage('facebook')">??FaceBook??</a>
+           <a href="/home">Home</a>
+           <a href="/about">About</a>
+           <a href="/contact">Contact</a>
+           <a href="/services">Services</a>
+           <a href="/facebook">FaceBook</a>
         </aside>
 
         <!-- Main Content Section -->
