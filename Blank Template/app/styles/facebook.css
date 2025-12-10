@@ -1,0 +1,111 @@
+.main-block{
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    margin-inline: 25px;
+    margin-bottom: 150px;
+}
+
+.gallery{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow-x:clip;
+}
+
+.gallery a{
+    all:unset;
+    width: 50px;
+    aspect-ratio: 1/1;
+    border: 2px solid black;
+    border-radius:50%;
+    padding:10px;
+    margin-inline:10px
+}
+.gallery button{
+    all: unset;
+    font-size: 50px;
+    width: 50px;
+    aspect-ratio: 1/1;
+    position: fixed;
+}
+
+.gallery.prev{
+    left: 5%;
+}
+.gallery.next{
+    right: 5%;
+}
+
+.facebook-slide{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.facebook-post{
+    width:150px;
+    height:250px;
+    border: 2px solid black;
+    
+}
+
+
+.facebook-post.prev{
+    width:75px;
+    height: 125px;
+    margin-right:10px
+    
+}
+.facebook-post.next{
+    width:75px;
+    height: 125px;
+    margin-left:10px
+}
+.facebook-post.curnt{
+    width:175px;
+    height:375px;
+    margin-inline: 20px;
+}
+
+.facebook-post.inactive{
+    opacity: 0.25;
+    display: block;
+}
+
+
+
+/* mobile resposive */
+
+@media screen and (min-width: 375px){
+    .gallery.prev{
+        left:8%;
+    }
+    .gallery.next{
+        right:8%;
+    }
+}
+
+/* Tablet and up */
+@media screen and (min-width: 768px){
+    .facebook-post.inactive{
+        display: block;
+        opacity: 0.25;
+    }
+    .facebook-post.curnt{
+        width:200px;
+        height:400px;
+    }
+
+    .gallery button{
+        color: black;
+        border-radius: 50%;
+    }
+    .gallery.prev{
+        left: 10%;
+    }
+    .gallery.next{
+        right: 10%;
+    }
+}
