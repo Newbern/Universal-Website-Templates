@@ -1,0 +1,14 @@
+.main-block {
+    display: block;
+    text-align: center;
+    margin-inline: 25px;
+    color: var(--page-text-color);
+}
+
+h1 {
+    font-size: 70px;
+}
+
+p{
+    font-size: larger
+}

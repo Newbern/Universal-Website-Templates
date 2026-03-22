@@ -1,13 +1,40 @@
 .main-block{
     display: block;
     text-align: center;
-    margin-top: 50px;
     margin-inline: 25px;
-    margin-bottom: 150px;
+    color: var(--page-text-color);
 }
 
 .main-block img{
     width:250px;
-    aspect-ratio: 0/1;
+    aspect-ratio: 1/1;
     border: 3px solid black;
+}
+.main-block p {
+    margin-bottom: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* Tablet */
+@media screen and (min-width: 768px){
+    .grid {
+        display:flex;
+        margin-bottom: 50px;
+        gap: 25px
+    }
+    .main-block p{
+        text-align:left;
+        margin-inline:50px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px){
+    .main-block{
+        margin-inline: 100px;
+    }
 }

@@ -15,14 +15,14 @@ $_GET['page'] = $request ?: 'home';
 
 
 // Allowed Pages
-$allowedPages = ['home', 'about', 'services', 'contact', 'facebook'];
+$allowedPages = ['home', 'about', 'services', 'contact', 'facebook', 'projects'];
 
 // Getting current page
 $page = $_GET['page'] ?? '';
 
 // Validate Page
 if (!in_array($page, $allowedPages)) {
-    $page = 'home';
+    $page = '404';
 };
 
 // Setting SEO Meta Tage with Page Specific Data
@@ -46,6 +46,8 @@ else {
 // Setting JavaScript File Path with Page Specific Data
 $JavaScript = "app/controllers/$page.js";
 
+// Including Company Information
+include('company.php');
 
 // Including The Base Template
 include('app/templates/base.php');
