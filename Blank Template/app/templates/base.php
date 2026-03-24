@@ -43,10 +43,10 @@
                    <div class='hamburger-btn-bar'></div>
                 </div>
 
-                <!-- Logo/Brand Name -->
-                <div class='logo'>
-                    <a href='<?= $company_Social_Media['facebook'] ?>'><img src='<?= $company_Logo ?>' alt='Logo'></a>
-                </div>
+                <!-- Phone Button -->
+                <a class='phone' href='tel:<?= $company_Phone ?>'>
+                    <img src='app/media/Phone.png' alt='Company Phone Number: <?= $company_Phone ?>'>
+                </a>
         </header>
 
         <!-- Sidebar -->
